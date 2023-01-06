@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch-A-sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <div id="container">
+        <!-- it contains all of the input that the user will interact with-->
+        <div id="panel">
+            <div class="blocks">
+                <p>Choose Your Color</p>
+                <input type="color" value="#000000" id="colorPicker" class="colorInput">
+            </div>
+
+            <div class="blocks">
+                <p>Choose your<br> background color</p>
+                <div id="aligner">
+                    <input type="color" id="backgroundPicker" class="colorInput" value="#B2B2B2">
+                    <button id="BackgroundPickerBtn">OK</button>
+                </div>
+            </div>
+
+            <div class="blocks">
+                <button id="randomColor">Random Color: off</button>
+            </div>
+
+            <div class="blocks">
+                <button id="showGrid">Show Grid</button>
+            </div>
+
+            <div class="blocks">
+                <button id="clear">Clear</button>
+            </div>
+
+            <div class="blocks" id="range-container">
+                <p>Your Current Size:</p>
+                <p id="rangeValuePrinter">-</p>
+                <input id="range" type="range" min="2" max="64" value="16">
+            </div>
+        </div>
+        <!-- it containes all of the grid cells that will be generated with de DOM-->
+        <div id="wrapper">
+        </div>
+    </div>
+</body>
+
+</html>
