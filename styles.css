@@ -1,0 +1,87 @@
+html,
+body {
+  background: rgb(32, 32, 42);
+  font-family: "Chivo Mono", monospace;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  font-size: larger;
+  font-weight: 800;
+  background-color: rgb(110, 110, 115);
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  margin: 5px;
+}
+
+input[type="range"] {
+  height: 70px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#wrapper {
+  background-color: rgb(178, 178, 178);
+  border-style: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  height: 900px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+#panel {
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  padding: 10px;
+  background-color: rgb(50, 50, 65);
+  border-radius: 12px;
+}
+
+#aligner {
+  display: flex;
+  width: 85%;
+}
+
+.colorInput {
+  width: 80%;
+  height: 45px;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(85, 85, 95);
+  border-style: hidden;
+  border-radius: 15px;
+  margin: 10px 0 10px 0;
+  padding: 12px 0 12px 0;
+  width: 100%;
+  color: white;
+  font-weight: 30px;
+}
+
+.show-grid {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(156, 156, 156);
+}
